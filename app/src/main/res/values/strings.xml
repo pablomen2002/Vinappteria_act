@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Vinappteria</string>
+    <string name="rightAddress">Biembenidos a vinappteria</string>
+    <string name="qulity">No salgas de casa \n No sotros te lo llevamos</string>
 </resources>

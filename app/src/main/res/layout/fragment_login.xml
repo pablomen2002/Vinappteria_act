@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blury_background"
+        android:scaleType="centerCrop"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h3"
+            android:layout_marginTop="110dp"
+            android:drawableStart="@drawable/ic_kleine_shape"
+            android:drawablePadding="6dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/guidelineloginlefth"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Vinappteria."/>
+
+        <TextView
+            android:id="@+id/tvshoppingaccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h4"
+            android:layout_marginTop="55dp"
+            app:layout_constraintTop_toBottomOf="@id/tvAppName"
+            app:layout_constraintStart_toStartOf="@id/guidelineloginlefth"
+            android:text="Inicia Sesion"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="35sp"
+            />
+
+        <TextView
+            android:id="@+id/tvregistrart"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Y tienes cuenta?Registro"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="@id/guidelineloginlefth"
+            app:layout_constraintTop_toBottomOf="@id/tvshoppingaccion" />
+
+        <EditText
+            style="@style/editText"
+            android:layout_width="295dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="4dp"
+            android:hint="email"
+            app:layout_constraintEnd_toEndOf="@id/guidelineloginlefth"
+            app:layout_constraintEnd_toStartOf="@id/guidelineloginRight"
+            app:layout_constraintTop_toBottomOf="@id/tvregistrart"
+            app:layout_goneMarginTop="50dp"
+            android:inputType="textEmailAddress"/>
+
+
+        <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineloginlefth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="54dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineloginRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="356dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

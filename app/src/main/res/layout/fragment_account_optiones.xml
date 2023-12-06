@@ -14,19 +14,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tvAppName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/h3"
-            android:layout_marginTop="120dp"
-            android:drawableStart="@drawable/ic_kleine_shape"
-            android:drawablePadding="6dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:text="Vinappteria."/>
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/h3"
+        android:layout_marginTop="120dp"
+        android:drawableStart="@drawable/ic_kleine_shape"
+        android:drawablePadding="6dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Vinappteria."/>
 
         <TextView
             android:id="@+id/tvRightAddressForShopping"
