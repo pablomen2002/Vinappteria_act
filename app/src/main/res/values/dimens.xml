@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="buttonCorners">55dp</dimen>
+    <dimen name="edittextHeight">55dp</dimen>
+    <dimen name="mediumButtonHeight">55dp</dimen>
 </resources>

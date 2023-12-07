@@ -36,7 +36,7 @@
             android:layout_marginTop="55dp"
             app:layout_constraintTop_toBottomOf="@id/tvAppName"
             app:layout_constraintStart_toStartOf="@id/guidelineloginlefth"
-            android:text="Inicia Sesion"
+            android:text="Inicio de Sesion"
             android:textAlignment="center"
             android:gravity="center"
             android:textSize="35sp"
@@ -48,12 +48,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Y tienes cuenta?Registro"
+            android:text="Ya tienes cuenta?Registro"
             android:textAlignment="center"
             app:layout_constraintStart_toStartOf="@id/guidelineloginlefth"
             app:layout_constraintTop_toBottomOf="@id/tvshoppingaccion" />
 
         <EditText
+            android:id="@+id/edittextemail"
             style="@style/editText"
             android:layout_width="295dp"
             android:layout_height="49dp"
@@ -66,6 +67,80 @@
             app:layout_goneMarginTop="50dp"
             android:inputType="textEmailAddress"/>
 
+        <EditText
+            android:id="@+id/edittexpassword"
+            style="@style/editText"
+            android:layout_width="295dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="4dp"
+            android:hint="password"
+            app:layout_constraintEnd_toEndOf="@id/guidelineloginlefth"
+            app:layout_constraintEnd_toStartOf="@id/guidelineloginRight"
+            app:layout_constraintTop_toBottomOf="@id/edittextemail"
+            app:layout_goneMarginTop="15dp"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/olvidastetupassword"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="olvidaste tu password?"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="@id/guidelineloginlefth"
+            app:layout_constraintTop_toBottomOf="@id/edittexpassword"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/facebooklogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook_login"
+            app:layout_constraintStart_toStartOf="@+id/guidelineloginlefth"
+            app:layout_constraintTop_toBottomOf="@+id/buttonloginprincipal"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            app:layout_constraintStart_toStartOf="@+id/guidelineloginlefth"
+            app:layout_constraintTop_toTopOf="@id/facebooklogin"
+            app:layout_constraintBottom_toBottomOf="@id/facebooklogin"
+            app:layout_constraintEnd_toEndOf="@id/facebooklogin"/>
+
+        <ImageView
+            android:id="@+id/googlelogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/google_login"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineloginRight"
+            app:layout_constraintTop_toBottomOf="@+id/buttonloginprincipal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:text="Google"
+            app:layout_constraintBottom_toBottomOf="@id/googlelogin"
+            app:layout_constraintEnd_toEndOf="@id/googlelogin"
+            app:layout_constraintTop_toTopOf="@id/facebooklogin"
+            app:layout_constraintVertical_bias="0.476" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonloginprincipal"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            style="@style/blueButtonStyle"
+            app:layout_constraintTop_toBottomOf="@id/olvidastetupassword"
+            app:layout_constraintStart_toStartOf="@id/guidelineloginlefth"
+            app:layout_constraintEnd_toEndOf="@id/guidelineloginRight"
+            android:text="Login"
+            android:layout_marginTop="15dp"/>
 
         <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineloginlefth"
